@@ -1,0 +1,582 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 5F342536
+P 5000 3550
+F 0 "C1" H 5115 3596 50  0000 L CNN
+F 1 "0.1uF" H 5115 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5038 3400 50  0001 C CNN
+F 3 "~" H 5000 3550 50  0001 C CNN
+	1    5000 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3350 5800 3400
+Wire Wire Line
+	5000 3700 5000 3800
+$Comp
+L power:GND #PWR0107
+U 1 1 5F342550
+P 5000 3800
+F 0 "#PWR0107" H 5000 3550 50  0001 C CNN
+F 1 "GND" H 5005 3627 50  0000 C CNN
+F 2 "" H 5000 3800 50  0001 C CNN
+F 3 "" H 5000 3800 50  0001 C CNN
+	1    5000 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4500 6950 4550
+$Comp
+L Device:C C2
+U 1 1 5F34256D
+P 6600 3450
+F 0 "C2" H 6715 3496 50  0000 L CNN
+F 1 "0.1uF" H 6715 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6638 3300 50  0001 C CNN
+F 3 "~" H 6600 3450 50  0001 C CNN
+	1    6600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 3300 6600 3300
+Connection ~ 6000 3300
+Text GLabel 4550 4250 0    50   Input ~ 0
+IMU_MOSI
+Text GLabel 4550 4150 0    50   Input ~ 0
+IMU_MISO
+Text GLabel 4550 4450 0    50   Input ~ 0
+IMU_CS
+Text GLabel 4550 4350 0    50   Input ~ 0
+IMU_CLK
+Wire Wire Line
+	4650 4300 4650 4350
+Wire Wire Line
+	4650 4350 4550 4350
+Wire Wire Line
+	4550 4450 4700 4450
+Wire Wire Line
+	4700 4450 4700 4350
+Wire Wire Line
+	4700 4350 4750 4350
+Text GLabel 6750 4000 2    50   Input ~ 0
+IMU_INT
+$Comp
+L Connector:Conn_01x10_Female J2
+U 1 1 5F2BD61A
+P 8550 4100
+F 0 "J2" H 8578 4076 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 8578 3985 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 8550 4100 50  0001 C CNN
+F 3 "~" H 8550 4100 50  0001 C CNN
+	1    8550 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0109
+U 1 1 5F2BEBE6
+P 8250 3550
+F 0 "#PWR0109" H 8250 3400 50  0001 C CNN
+F 1 "VCC" H 8265 3723 50  0000 C CNN
+F 2 "" H 8250 3550 50  0001 C CNN
+F 3 "" H 8250 3550 50  0001 C CNN
+	1    8250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F2BEF64
+P 8150 3800
+F 0 "#PWR0110" H 8150 3550 50  0001 C CNN
+F 1 "GND" V 8155 3672 50  0000 R CNN
+F 2 "" H 8150 3800 50  0001 C CNN
+F 3 "" H 8150 3800 50  0001 C CNN
+	1    8150 3800
+	0    1    1    0   
+$EndComp
+Text GLabel 8150 3900 0    50   Input ~ 0
+IMU_CLK
+Text GLabel 8150 4000 0    50   Input ~ 0
+IMU_MOSI
+Text GLabel 8150 4300 0    50   Input ~ 0
+IMU_MISO
+Text GLabel 8150 4400 0    50   Input ~ 0
+IMU_INT
+Text GLabel 8150 4500 0    50   Input ~ 0
+IMU1_CS
+Wire Wire Line
+	8150 3800 8350 3800
+Wire Wire Line
+	8250 3550 8250 3700
+Wire Wire Line
+	8250 3700 8350 3700
+Wire Wire Line
+	8350 3900 8150 3900
+Wire Wire Line
+	8150 4000 8350 4000
+Wire Wire Line
+	8350 4300 8150 4300
+Wire Wire Line
+	8150 4400 8350 4400
+Wire Wire Line
+	8350 4500 8150 4500
+$Comp
+L Device:R R1
+U 1 1 5F2C98FC
+P 4750 3650
+F 0 "R1" H 4820 3696 50  0000 L CNN
+F 1 "R" H 4820 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 3650 50  0001 C CNN
+F 3 "~" H 4750 3650 50  0001 C CNN
+	1    4750 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3800 4750 4350
+Wire Wire Line
+	6000 3300 5850 3300
+Wire Wire Line
+	5850 3300 5850 3200
+Wire Wire Line
+	4750 3100 4750 3500
+$Comp
+L power:VCC #PWR0111
+U 1 1 5F2D0B30
+P 5850 3100
+F 0 "#PWR0111" H 5850 2950 50  0001 C CNN
+F 1 "VCC" H 5865 3273 50  0000 C CNN
+F 2 "" H 5850 3100 50  0001 C CNN
+F 3 "" H 5850 3100 50  0001 C CNN
+	1    5850 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3350 5800 3350
+Wire Wire Line
+	5800 3350 5800 3200
+Wire Wire Line
+	5800 3200 5850 3200
+Connection ~ 5800 3350
+Connection ~ 5850 3200
+Wire Wire Line
+	5850 3200 5850 3100
+Wire Wire Line
+	6950 4950 6950 4850
+$Comp
+L power:GND #PWR0112
+U 1 1 5F342558
+P 6950 4950
+F 0 "#PWR0112" H 6950 4700 50  0001 C CNN
+F 1 "GND" H 6955 4777 50  0000 C CNN
+F 2 "" H 6950 4950 50  0001 C CNN
+F 3 "" H 6950 4950 50  0001 C CNN
+	1    6950 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F34253C
+P 6950 4700
+F 0 "C3" H 7065 4746 50  0000 L CNN
+F 1 "0.1uF" H 7065 4655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 4550 50  0001 C CNN
+F 3 "~" H 6950 4700 50  0001 C CNN
+	1    6950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 5550 5350 5000
+$Comp
+L power:GND #PWR0113
+U 1 1 5F342501
+P 5900 5550
+F 0 "#PWR0113" H 5900 5300 50  0001 C CNN
+F 1 "GND" H 5905 5377 50  0000 C CNN
+F 2 "" H 5900 5550 50  0001 C CNN
+F 3 "" H 5900 5550 50  0001 C CNN
+	1    5900 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3350 5000 3400
+Wire Wire Line
+	4850 4000 4850 4150
+Wire Wire Line
+	4850 4000 5200 4000
+Wire Wire Line
+	4550 4150 4850 4150
+Wire Wire Line
+	5200 4100 4900 4100
+Wire Wire Line
+	4900 4100 4900 4250
+Wire Wire Line
+	4900 4250 4550 4250
+Wire Wire Line
+	4650 4300 5000 4300
+Wire Wire Line
+	5000 4300 5000 4200
+Wire Wire Line
+	5000 4200 5200 4200
+Wire Wire Line
+	5200 4500 5200 5000
+Wire Wire Line
+	5200 5000 5350 5000
+Wire Wire Line
+	4700 4450 5050 4450
+Wire Wire Line
+	5050 4450 5050 4300
+Wire Wire Line
+	5050 4300 5200 4300
+Connection ~ 4700 4450
+Wire Wire Line
+	6750 4000 6600 4000
+Wire Wire Line
+	5900 5200 5900 5550
+Wire Wire Line
+	5350 5550 5900 5550
+Connection ~ 5900 5550
+NoConn ~ 6600 4200
+NoConn ~ 6600 4300
+Wire Wire Line
+	6600 4600 7250 4600
+Wire Wire Line
+	7250 4600 7250 3100
+Wire Wire Line
+	7250 3100 5850 3100
+Connection ~ 5850 3100
+Wire Wire Line
+	4750 3100 5850 3100
+Wire Wire Line
+	6600 4500 6950 4500
+Wire Wire Line
+	6600 4700 6600 5550
+Wire Wire Line
+	6600 5550 5900 5550
+$Comp
+L Sensor_Pressure:MS5611-01BA U7
+U 1 1 5F2F25F4
+P 8400 5550
+F 0 "U7" H 8730 5596 50  0000 L CNN
+F 1 "MS5611-01BA" H 8730 5505 50  0000 L CNN
+F 2 "Package_LGA:LGA-8_3x5mm_P1.25mm" H 8400 5550 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=MS5611-01BA03&DocType=Data+Sheet&DocLang=English" H 8400 5550 50  0001 C CNN
+	1    8400 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 5650 0    50   Input ~ 0
+IMU_CLK
+Text GLabel 7800 5450 0    50   Input ~ 0
+IMU_MOSI
+Text GLabel 7750 5550 0    50   Input ~ 0
+IMU_MISO
+Wire Wire Line
+	7800 5450 8000 5450
+Wire Wire Line
+	7750 5550 8000 5550
+Wire Wire Line
+	7750 5650 8000 5650
+$Comp
+L power:VCC #PWR0139
+U 1 1 5F2F87B9
+P 8400 5000
+F 0 "#PWR0139" H 8400 4850 50  0001 C CNN
+F 1 "VCC" H 8415 5173 50  0000 C CNN
+F 2 "" H 8400 5000 50  0001 C CNN
+F 3 "" H 8400 5000 50  0001 C CNN
+	1    8400 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5000 8400 5050
+Wire Wire Line
+	8000 5350 8000 5200
+Wire Wire Line
+	8000 5200 7800 5200
+Wire Wire Line
+	8400 5950 8400 6000
+$Comp
+L power:GND #PWR0140
+U 1 1 5F2FBD71
+P 8400 6150
+F 0 "#PWR0140" H 8400 5900 50  0001 C CNN
+F 1 "GND" H 8405 5977 50  0000 C CNN
+F 2 "" H 8400 6150 50  0001 C CNN
+F 3 "" H 8400 6150 50  0001 C CNN
+	1    8400 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0164
+U 1 1 5F2FC4AE
+P 7800 5200
+F 0 "#PWR0164" H 7800 4950 50  0001 C CNN
+F 1 "GND" V 7805 5072 50  0000 R CNN
+F 2 "" H 7800 5200 50  0001 C CNN
+F 3 "" H 7800 5200 50  0001 C CNN
+	1    7800 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5F2FCC1C
+P 8900 5200
+F 0 "C22" H 9015 5246 50  0000 L CNN
+F 1 "C" H 9015 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 5050 50  0001 C CNN
+F 3 "~" H 8900 5200 50  0001 C CNN
+	1    8900 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8400 5050 8900 5050
+Connection ~ 8400 5050
+Wire Wire Line
+	8400 5050 8400 5150
+Wire Wire Line
+	8900 5350 8900 6000
+Wire Wire Line
+	8900 6000 8400 6000
+Connection ~ 8400 6000
+Wire Wire Line
+	8400 6000 8400 6150
+$Comp
+L Sensor_Motion:ICM-20602 U8
+U 1 1 5F30F610
+P 2750 3900
+F 0 "U8" H 2750 3311 50  0000 C CNN
+F 1 "ICM-20602" H 2750 3220 50  0000 C CNN
+F 2 "Package_LGA:LGA-16_3x3mm_P0.5mm_LayoutBorder3x5y" H 2750 4150 50  0001 C CNN
+F 3 "http://www.invensense.com/wp-content/uploads/2016/10/DS-000176-ICM-20602-v1.0.pdf" H 2800 4850 50  0001 C CNN
+	1    2750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0165
+U 1 1 5F311752
+P 2850 3000
+F 0 "#PWR0165" H 2850 2850 50  0001 C CNN
+F 1 "VCC" H 2865 3173 50  0000 C CNN
+F 2 "" H 2850 3000 50  0001 C CNN
+F 3 "" H 2850 3000 50  0001 C CNN
+	1    2850 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3400 2750 3000
+Wire Wire Line
+	2750 3000 2850 3000
+Wire Wire Line
+	2850 3000 2850 3400
+Connection ~ 2850 3000
+Wire Wire Line
+	2850 3000 3050 3000
+$Comp
+L Device:C C23
+U 1 1 5F316297
+P 3050 3150
+F 0 "C23" H 3165 3196 50  0000 L CNN
+F 1 "C" H 3165 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3088 3000 50  0001 C CNN
+F 3 "~" H 3050 3150 50  0001 C CNN
+	1    3050 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 3000
+Wire Wire Line
+	3050 3000 3300 3000
+$Comp
+L Device:C C24
+U 1 1 5F316B53
+P 3300 3150
+F 0 "C24" H 3415 3196 50  0000 L CNN
+F 1 "C" H 3415 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3338 3000 50  0001 C CNN
+F 3 "~" H 3300 3150 50  0001 C CNN
+	1    3300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0166
+U 1 1 5F3171BF
+P 3150 3300
+F 0 "#PWR0166" H 3150 3050 50  0001 C CNN
+F 1 "GND" H 3155 3127 50  0000 C CNN
+F 2 "" H 3150 3300 50  0001 C CNN
+F 3 "" H 3150 3300 50  0001 C CNN
+	1    3150 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3300 3150 3300
+Connection ~ 3150 3300
+Wire Wire Line
+	3150 3300 3300 3300
+$Comp
+L Device:C C25
+U 1 1 5F3194C6
+P 3350 4200
+F 0 "C25" H 3465 4246 50  0000 L CNN
+F 1 "C" H 3465 4155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3388 4050 50  0001 C CNN
+F 3 "~" H 3350 4200 50  0001 C CNN
+	1    3350 4200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 4000 0    50   Input ~ 0
+IMU_CLK
+Text GLabel 2050 3900 0    50   Input ~ 0
+IMU_MOSI
+Text GLabel 2050 3800 0    50   Input ~ 0
+IMU_MISO
+Wire Wire Line
+	2050 3900 2250 3900
+Wire Wire Line
+	2250 3800 2050 3800
+Wire Wire Line
+	2000 4000 2250 4000
+Wire Wire Line
+	3250 4000 3350 4000
+Wire Wire Line
+	3350 4000 3350 4050
+$Comp
+L Device:C C26
+U 1 1 5F3293FF
+P 3600 3150
+F 0 "C26" H 3715 3196 50  0000 L CNN
+F 1 "C" H 3715 3105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3638 3000 50  0001 C CNN
+F 3 "~" H 3600 3150 50  0001 C CNN
+	1    3600 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3000 3600 3000
+Connection ~ 3300 3000
+Wire Wire Line
+	3600 3300 3300 3300
+Connection ~ 3300 3300
+Wire Wire Line
+	3350 4350 3350 4450
+Wire Wire Line
+	3350 4450 2750 4450
+Wire Wire Line
+	2750 4450 2750 4400
+$Comp
+L power:GND #PWR0167
+U 1 1 5F331293
+P 2750 4650
+F 0 "#PWR0167" H 2750 4400 50  0001 C CNN
+F 1 "GND" H 2755 4477 50  0000 C CNN
+F 2 "" H 2750 4650 50  0001 C CNN
+F 3 "" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3900 3350 3900
+Wire Wire Line
+	3350 3900 3350 4000
+Connection ~ 3350 4000
+Text GLabel 2000 4100 0    50   Input ~ 0
+IMU_CS2
+Wire Wire Line
+	2000 4100 2250 4100
+Text GLabel 7750 5750 0    50   Input ~ 0
+IMU_CS3
+Wire Wire Line
+	7750 5750 8000 5750
+$Comp
+L Device:CP C21
+U 1 1 5F345643
+P 7000 3450
+F 0 "C21" H 7118 3496 50  0000 L CNN
+F 1 "CP" H 7118 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7038 3300 50  0001 C CNN
+F 3 "~" H 7000 3450 50  0001 C CNN
+	1    7000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C27
+U 1 1 5F345FBD
+P 7450 3450
+F 0 "C27" H 7565 3496 50  0000 L CNN
+F 1 "C" H 7565 3405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7488 3300 50  0001 C CNN
+F 3 "~" H 7450 3450 50  0001 C CNN
+	1    7450 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3300 7000 3300
+Connection ~ 6600 3300
+Connection ~ 7000 3300
+Wire Wire Line
+	7000 3300 7450 3300
+Wire Wire Line
+	6000 3400 6000 3300
+$Comp
+L Sensor_Motion:MPU-9250 U3
+U 1 1 5F2DAAC1
+P 5900 4300
+F 0 "U3" H 5900 3311 50  0000 C CNN
+F 1 "MPU-9250" H 5900 3220 50  0000 C CNN
+F 2 "Sensor_Motion:InvenSense_QFN-24_3x3mm_P0.4mm" H 5900 3300 50  0001 C CNN
+F 3 "https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf" H 5900 4150 50  0001 C CNN
+	1    5900 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F342576
+P 6600 3700
+F 0 "#PWR0108" H 6600 3450 50  0001 C CNN
+F 1 "GND" H 6605 3527 50  0000 C CNN
+F 2 "" H 6600 3700 50  0001 C CNN
+F 3 "" H 6600 3700 50  0001 C CNN
+	1    6600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3600 6600 3700
+$Comp
+L power:GND #PWR0163
+U 1 1 5F34C653
+P 7000 3700
+F 0 "#PWR0163" H 7000 3450 50  0001 C CNN
+F 1 "GND" H 7005 3527 50  0000 C CNN
+F 2 "" H 7000 3700 50  0001 C CNN
+F 3 "" H 7000 3700 50  0001 C CNN
+	1    7000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0170
+U 1 1 5F34C766
+P 7450 3700
+F 0 "#PWR0170" H 7450 3450 50  0001 C CNN
+F 1 "GND" H 7455 3527 50  0000 C CNN
+F 2 "" H 7450 3700 50  0001 C CNN
+F 3 "" H 7450 3700 50  0001 C CNN
+	1    7450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3600 7450 3700
+Wire Wire Line
+	7000 3600 7000 3700
+$EndSCHEMATC

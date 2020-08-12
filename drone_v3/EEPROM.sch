@@ -1,0 +1,122 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Memory_EEPROM:24LC512 U5
+U 1 1 5F2788FF
+P 5350 3600
+F 0 "U5" H 5350 4081 50  0000 C CNN
+F 1 "24LC512" H 5350 3990 50  0000 C CNN
+F 2 "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.81mm" H 5350 3600 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21754M.pdf" H 5350 3600 50  0001 C CNN
+	1    5350 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0157
+U 1 1 5F278905
+P 5350 4050
+F 0 "#PWR0157" H 5350 3800 50  0001 C CNN
+F 1 "GND" H 5355 3877 50  0000 C CNN
+F 2 "" H 5350 4050 50  0001 C CNN
+F 3 "" H 5350 4050 50  0001 C CNN
+	1    5350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0158
+U 1 1 5F27890B
+P 5350 3050
+F 0 "#PWR0158" H 5350 2900 50  0001 C CNN
+F 1 "VCC" H 5365 3223 50  0000 C CNN
+F 2 "" H 5350 3050 50  0001 C CNN
+F 3 "" H 5350 3050 50  0001 C CNN
+	1    5350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3500 4950 3600
+Wire Wire Line
+	4950 4050 5350 4050
+Connection ~ 4950 3600
+Wire Wire Line
+	4950 3600 4950 3700
+Connection ~ 4950 3700
+Wire Wire Line
+	4950 3700 4950 4050
+Wire Wire Line
+	5350 3900 5350 4050
+Connection ~ 5350 4050
+Wire Wire Line
+	5350 3050 5350 3100
+Wire Wire Line
+	5750 3500 5950 3500
+$Comp
+L Device:R R10
+U 1 1 5F27891B
+P 5950 3350
+F 0 "R10" H 6020 3396 50  0000 L CNN
+F 1 "R" H 6020 3305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5880 3350 50  0001 C CNN
+F 3 "~" H 5950 3350 50  0001 C CNN
+	1    5950 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 5950 3500
+Wire Wire Line
+	5950 3500 6000 3500
+$Comp
+L Device:R R11
+U 1 1 5F278923
+P 6200 3450
+F 0 "R11" H 6270 3496 50  0000 L CNN
+F 1 "R" H 6270 3405 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6130 3450 50  0001 C CNN
+F 3 "~" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 3600 6200 3600
+Wire Wire Line
+	6000 3500 6000 3700
+Wire Wire Line
+	6000 3700 6500 3700
+Wire Wire Line
+	6200 3600 6500 3600
+Connection ~ 6200 3600
+Wire Wire Line
+	5950 3200 6100 3200
+Wire Wire Line
+	6200 3200 6200 3300
+Wire Wire Line
+	6100 3200 6100 3100
+Wire Wire Line
+	6100 3100 5350 3100
+Connection ~ 6100 3200
+Wire Wire Line
+	6100 3200 6200 3200
+Connection ~ 5350 3100
+Wire Wire Line
+	5350 3100 5350 3300
+Text GLabel 6500 3700 2    50   Input ~ 0
+I2C_SDA
+Text GLabel 6500 3600 2    50   Input ~ 0
+I2C_SCl
+Wire Wire Line
+	5750 3700 5750 4050
+Wire Wire Line
+	5750 4050 5350 4050
+$EndSCHEMATC

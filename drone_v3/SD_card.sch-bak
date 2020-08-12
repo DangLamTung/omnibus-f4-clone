@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR0159
+U 1 1 5F2992AD
+P 7100 4350
+F 0 "#PWR0159" H 7100 4100 50  0001 C CNN
+F 1 "GND" H 7105 4177 50  0000 C CNN
+F 2 "" H 7100 4350 50  0001 C CNN
+F 3 "" H 7100 4350 50  0001 C CNN
+	1    7100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0160
+U 1 1 5F299A94
+P 5900 2400
+F 0 "#PWR0160" H 5900 2250 50  0001 C CNN
+F 1 "VCC" H 5915 2573 50  0000 C CNN
+F 2 "" H 5900 2400 50  0001 C CNN
+F 3 "" H 5900 2400 50  0001 C CNN
+	1    5900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5F29A10D
+P 5900 2650
+F 0 "R15" H 5970 2696 50  0000 L CNN
+F 1 "R" H 5970 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5830 2650 50  0001 C CNN
+F 3 "~" H 5900 2650 50  0001 C CNN
+	1    5900 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 2400 5900 2450
+Wire Wire Line
+	5900 3100 5900 2800
+$Comp
+L Connector:Micro_SD_Card J19
+U 1 1 5F29F2B9
+P 7500 3400
+F 0 "J19" H 7450 4117 50  0000 C CNN
+F 1 "Micro_SD_Card" H 7450 4026 50  0000 C CNN
+F 2 "drone_v3:SD_card_mua_duoc" H 8650 3700 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7500 3400 50  0001 C CNN
+	1    7500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3600 6100 3600
+Wire Wire Line
+	6100 3600 6100 4350
+Wire Wire Line
+	6100 4350 7100 4350
+Wire Wire Line
+	6600 3400 5350 3400
+Wire Wire Line
+	5350 3400 5350 2450
+Wire Wire Line
+	5350 2450 5900 2450
+Connection ~ 5900 2450
+Wire Wire Line
+	5900 2450 5900 2500
+Wire Wire Line
+	5900 3100 6600 3100
+Wire Wire Line
+	6600 3200 5850 3200
+Wire Wire Line
+	6600 3300 5850 3300
+Wire Wire Line
+	6600 3500 5850 3500
+Wire Wire Line
+	8300 4000 8300 4150
+Wire Wire Line
+	8300 4150 6650 4150
+Wire Wire Line
+	6650 4150 6650 3900
+Text GLabel 5850 3200 0    50   Input ~ 0
+SD_CS
+Text GLabel 5850 3300 0    50   Input ~ 0
+SD_MOSI
+Text GLabel 5850 3500 0    50   Input ~ 0
+SD_CLK
+Text GLabel 5850 3700 0    50   Input ~ 0
+SD_MISO
+$Comp
+L Device:R R14
+U 1 1 5F2A41B8
+P 5050 2750
+F 0 "R14" H 5120 2796 50  0000 L CNN
+F 1 "R" H 5120 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4980 2750 50  0001 C CNN
+F 3 "~" H 5050 2750 50  0001 C CNN
+	1    5050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5F2A449B
+P 4800 2750
+F 0 "R13" H 4870 2796 50  0000 L CNN
+F 1 "R" H 4870 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 2750 50  0001 C CNN
+F 3 "~" H 4800 2750 50  0001 C CNN
+	1    4800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5F2A4765
+P 4600 2750
+F 0 "R12" H 4670 2796 50  0000 L CNN
+F 1 "R" H 4670 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4530 2750 50  0001 C CNN
+F 3 "~" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2450 5050 2450
+Wire Wire Line
+	4600 2450 4600 2600
+Connection ~ 5350 2450
+Wire Wire Line
+	4800 2600 4800 2450
+Connection ~ 4800 2450
+Wire Wire Line
+	4800 2450 4600 2450
+Wire Wire Line
+	5050 2600 5050 2450
+Connection ~ 5050 2450
+Wire Wire Line
+	5050 2450 4800 2450
+Wire Wire Line
+	4600 2900 4600 3900
+Wire Wire Line
+	4600 3900 6650 3900
+Wire Wire Line
+	4800 3800 4800 2900
+Wire Wire Line
+	4800 3800 6600 3800
+Wire Wire Line
+	5050 2900 5050 3700
+Wire Wire Line
+	5050 3700 6600 3700
+$EndSCHEMATC
