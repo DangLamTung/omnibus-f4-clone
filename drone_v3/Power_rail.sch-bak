@@ -102,7 +102,6 @@ F 3 "~" H 4700 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 4200 4500 4100
-Connection ~ 4500 3500
 Wire Wire Line
 	4500 3500 4500 3350
 Connection ~ 4500 3600
@@ -123,19 +122,6 @@ Wire Wire Line
 Connection ~ 4500 4100
 Wire Wire Line
 	4500 4100 4500 4000
-$Comp
-L power:VCC #PWR?
-U 1 1 5F4381B7
-P 4500 3350
-AR Path="/5F4381B7" Ref="#PWR?"  Part="1" 
-AR Path="/5F41B667/5F4381B7" Ref="#PWR0132"  Part="1" 
-F 0 "#PWR0132" H 4500 3200 50  0001 C CNN
-F 1 "VCC" H 4515 3523 50  0000 C CNN
-F 2 "" H 4500 3350 50  0001 C CNN
-F 3 "" H 4500 3350 50  0001 C CNN
-	1    4500 3350
-	1    0    0    -1  
-$EndComp
 Text GLabel 3800 4000 0    50   Input ~ 0
 TIM3_CH3
 Text GLabel 3800 4100 0    50   Input ~ 0
@@ -358,4 +344,18 @@ Wire Wire Line
 	8650 3250 8650 3500
 Text GLabel 3800 3500 0    50   Input ~ 0
 USB_D+
+Connection ~ 4500 3500
+$Comp
+L power:+5V #PWR?
+U 1 1 5F35A86E
+P 4500 3350
+AR Path="/5F35A86E" Ref="#PWR?"  Part="1" 
+AR Path="/5F41B667/5F35A86E" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 4500 3200 50  0001 C CNN
+F 1 "+5V" H 4515 3523 50  0000 C CNN
+F 2 "" H 4500 3350 50  0001 C CNN
+F 3 "" H 4500 3350 50  0001 C CNN
+	1    4500 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

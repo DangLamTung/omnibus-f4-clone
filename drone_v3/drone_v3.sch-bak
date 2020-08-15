@@ -76,8 +76,6 @@ Text GLabel 2650 4200 2    50   Input ~ 0
 I2C_SDA
 Text GLabel 2650 4100 2    50   Input ~ 0
 I2C_SCl
-Text GLabel 3150 2550 2    50   Input ~ 0
-TIM1_CH4
 Text GLabel 2600 2600 2    50   Input ~ 0
 TIM1_CH3
 Text GLabel 2600 2500 2    50   Input ~ 0

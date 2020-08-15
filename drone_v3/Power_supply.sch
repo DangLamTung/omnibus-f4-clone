@@ -130,19 +130,6 @@ Wire Wire Line
 Wire Wire Line
 	4500 3150 4500 3200
 $Comp
-L Regulator_Linear:AMS1117 U?
-U 1 1 5F584F3E
-P 4900 4300
-AR Path="/5F584F3E" Ref="U?"  Part="1" 
-AR Path="/5F569749/5F584F3E" Ref="U4"  Part="1" 
-F 0 "U4" H 4900 4542 50  0000 C CNN
-F 1 "AMS1117" H 4900 4451 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4900 4500 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 5000 4050 50  0001 C CNN
-	1    4900 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C?
 U 1 1 5F584F44
 P 3600 4450
@@ -150,7 +137,7 @@ AR Path="/5F584F44" Ref="C?"  Part="1"
 AR Path="/5F569749/5F584F44" Ref="C15"  Part="1" 
 F 0 "C15" H 3718 4496 50  0000 L CNN
 F 1 "CP" H 3718 4405 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 3638 4300 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3638 4300 50  0001 C CNN
 F 3 "~" H 3600 4450 50  0001 C CNN
 	1    3600 4450
 	1    0    0    -1  
@@ -393,4 +380,15 @@ F 3 "" H 5850 2800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5850 2950 5850 2800
+$Comp
+L Regulator_Linear:MCP1700-3302E_SOT23 U9
+U 1 1 5F3574BD
+P 4900 4300
+F 0 "U9" H 4900 4542 50  0000 C CNN
+F 1 "MCP1700-3302E_SOT23" H 4900 4451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4900 4525 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 4900 4300 50  0001 C CNN
+	1    4900 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

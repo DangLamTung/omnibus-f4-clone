@@ -369,20 +369,20 @@ Wire Notes Line
 Wire Notes Line
 	5700 6300 7900 6300
 Wire Notes Line
-	7900 6300 7900 4850
+	8450 6350 8450 4900
 Wire Notes Line
 	7900 4850 5700 4850
 $Comp
 L Device:C C?
 U 1 1 5F49F4ED
-P 6100 5550
+P 8000 5550
 AR Path="/5F49F4ED" Ref="C?"  Part="1" 
 AR Path="/5F4758EB/5F49F4ED" Ref="C9"  Part="1" 
-F 0 "C9" H 6215 5596 50  0000 L CNN
-F 1 "1u" H 6215 5505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6138 5400 50  0001 C CNN
-F 3 "~" H 6100 5550 50  0001 C CNN
-	1    6100 5550
+F 0 "C9" H 8115 5596 50  0000 L CNN
+F 1 "1u" H 8115 5505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8038 5400 50  0001 C CNN
+F 3 "~" H 8000 5550 50  0001 C CNN
+	1    8000 5550
 	1    0    0    -1  
 $EndComp
 Text GLabel 4450 5600 0    50   Input ~ 0
@@ -447,4 +447,9 @@ Wire Wire Line
 	4650 5800 4600 5800
 Wire Wire Line
 	4600 5800 4600 5700
+Wire Wire Line
+	7650 5400 8000 5400
+Wire Wire Line
+	8000 5700 7650 5700
+Connection ~ 7650 5700
 $EndSCHEMATC
