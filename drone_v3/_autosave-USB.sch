@@ -54,7 +54,6 @@ F 3 "" H 3000 3850 50  0001 C CNN
 	1    3000 3850
 	-1   0    0    1   
 $EndComp
-NoConn ~ 3250 4000
 NoConn ~ 3650 3800
 Wire Wire Line
 	3800 3700 3800 3750
@@ -160,7 +159,7 @@ AR Path="/5F569749/5F3E934F" Ref="D?"  Part="1"
 AR Path="/5F2F6324/5F3E934F" Ref="D6"  Part="1" 
 F 0 "D6" V 3904 3528 50  0000 L CNN
 F 1 "DIODE" V 3995 3528 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3950 3400 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3950 3400 50  0001 C CNN
 F 3 "~" H 3950 3400 50  0001 C CNN
 	1    3950 3400
 	1    0    0    -1  
@@ -178,4 +177,7 @@ F 3 "" H 4150 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 3400 4150 3300
+Wire Wire Line
+	3250 4000 3350 4000
+Connection ~ 3350 4000
 $EndSCHEMATC

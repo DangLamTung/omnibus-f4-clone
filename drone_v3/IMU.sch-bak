@@ -643,4 +643,43 @@ F 3 "" H 8400 5000 50  0001 C CNN
 	1    8400 5000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 5F38F9CC
+P 4150 5850
+AR Path="/5F38F9CC" Ref="C?"  Part="1" 
+AR Path="/5F569749/5F38F9CC" Ref="C?"  Part="1" 
+AR Path="/5F3218EE/5F38F9CC" Ref="C27"  Part="1" 
+F 0 "C27" H 4265 5896 50  0000 L CNN
+F 1 "1uF" H 4265 5805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4188 5700 50  0001 C CNN
+F 3 "~" H 4150 5850 50  0001 C CNN
+	1    4150 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5F39274C
+P 4550 5850
+AR Path="/5F39274C" Ref="C?"  Part="1" 
+AR Path="/5F569749/5F39274C" Ref="C?"  Part="1" 
+AR Path="/5F3218EE/5F39274C" Ref="C31"  Part="1" 
+F 0 "C31" H 4665 5896 50  0000 L CNN
+F 1 "100nF" H 4665 5805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4588 5700 50  0001 C CNN
+F 3 "~" H 4550 5850 50  0001 C CNN
+	1    4550 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 5700 4150 5700
+Connection ~ 4150 5700
+Wire Wire Line
+	4150 5700 4550 5700
+Wire Wire Line
+	4550 6000 4150 6000
+Connection ~ 3750 6000
+Connection ~ 4150 6000
+Wire Wire Line
+	4150 6000 3750 6000
 $EndSCHEMATC
