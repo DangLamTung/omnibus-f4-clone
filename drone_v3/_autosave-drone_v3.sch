@@ -1,0 +1,344 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	1800 1400 1800 1200
+Wire Wire Line
+	1800 1200 1900 1200
+Wire Wire Line
+	2200 1200 2200 1400
+Wire Wire Line
+	2100 1400 2100 1200
+Connection ~ 2100 1200
+Wire Wire Line
+	2100 1200 2200 1200
+Wire Wire Line
+	2000 1400 2000 1200
+Connection ~ 2000 1200
+Wire Wire Line
+	2000 1200 2100 1200
+Wire Wire Line
+	1900 1400 1900 1200
+Connection ~ 1900 1200
+Wire Wire Line
+	1900 1200 2000 1200
+$Comp
+L power:VCC #PWR0101
+U 1 1 5EE9169B
+P 2000 1100
+F 0 "#PWR0101" H 2000 950 50  0001 C CNN
+F 1 "VCC" H 2015 1273 50  0000 C CNN
+F 2 "" H 2000 1100 50  0001 C CNN
+F 3 "" H 2000 1100 50  0001 C CNN
+	1    2000 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 1100 2000 1200
+$Comp
+L power:GND #PWR0102
+U 1 1 5EE94441
+P 1900 5450
+F 0 "#PWR0102" H 1900 5200 50  0001 C CNN
+F 1 "GND" H 1905 5277 50  0000 C CNN
+F 2 "" H 1900 5450 50  0001 C CNN
+F 3 "" H 1900 5450 50  0001 C CNN
+	1    1900 5450
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	750  700  750  5900
+Text GLabel 1200 2800 0    50   Input ~ 0
+OSC1+
+Text GLabel 1200 2900 0    50   Input ~ 0
+OSC1-
+Text GLabel 2600 3900 2    50   Input ~ 0
+UART1_TX
+Text GLabel 2600 4000 2    50   Input ~ 0
+UART1_RX
+Text GLabel 2600 3000 2    50   Input ~ 0
+SWCLK
+Text GLabel 2600 2900 2    50   Input ~ 0
+SWDIO
+Text GLabel 2650 4200 2    50   Input ~ 0
+I2C_SDA
+Text GLabel 2650 4100 2    50   Input ~ 0
+I2C_SCl
+Text GLabel 2600 2600 2    50   Input ~ 0
+TIM1_CH3
+Text GLabel 2600 2500 2    50   Input ~ 0
+TIM1_CH2
+Text GLabel 2600 2400 2    50   Input ~ 0
+TIM1_CH1
+Text GLabel 1200 4200 0    50   Input ~ 0
+TIM3_CH4
+Text GLabel 1200 4100 0    50   Input ~ 0
+TIM3_CH3
+Text GLabel 1200 4000 0    50   Input ~ 0
+TIM3_CH2
+Text GLabel 1200 3900 0    50   Input ~ 0
+TIM3_CH1
+Text GLabel 1100 4600 0    50   Input ~ 0
+LED1
+Text GLabel 1100 4800 0    50   Input ~ 0
+LED2
+Text GLabel 1100 4700 0    50   Input ~ 0
+LED3
+Text GLabel 1200 4300 0    50   Input ~ 0
+UART4_TX
+Text GLabel 1200 4400 0    50   Input ~ 0
+UART4_RX
+Text GLabel 1100 2000 0    50   Input ~ 0
+VCAP_1
+Text GLabel 1150 2100 0    50   Input ~ 0
+VCAP_2
+Text GLabel 1200 1600 0    50   Input ~ 0
+NRST
+Text GLabel 1200 1800 0    50   Input ~ 0
+BOOT0
+Wire Wire Line
+	1900 5000 1900 5350
+Wire Wire Line
+	1800 5000 1800 5350
+Text GLabel 700  4400 0    50   Input ~ 0
+SBUS
+Text GLabel 2600 3600 2    50   Input ~ 0
+SPI3_SCK
+Text GLabel 2600 3700 2    50   Input ~ 0
+SPI3_MISO
+Text GLabel 2600 3800 2    50   Input ~ 0
+SPI3_MOSI
+Text GLabel 1200 3500 0    50   Input ~ 0
+ADC1
+Text GLabel 900  5100 2    50   Input ~ 0
+Buzzer
+Text GLabel 1200 4500 0    50   Input ~ 0
+UART5_TX
+Text GLabel 1200 3100 0    50   Input ~ 0
+UART5_RX
+Wire Wire Line
+	1200 4400 700  4400
+Wire Notes Line
+	750  5900 3400 5900
+Wire Notes Line
+	750  700  3400 700 
+Wire Notes Line
+	11150 1850 11150 650 
+Wire Wire Line
+	1200 4600 1100 4600
+Wire Wire Line
+	1200 2100 1150 2100
+NoConn ~ 1700 1400
+Wire Wire Line
+	1800 5350 1900 5350
+Connection ~ 1900 5350
+Wire Wire Line
+	1900 5350 1900 5450
+Wire Wire Line
+	1900 5350 2000 5350
+Wire Wire Line
+	2000 5350 2000 5000
+Wire Wire Line
+	1200 2000 1100 2000
+Wire Wire Line
+	2600 4100 2650 4100
+Wire Wire Line
+	2600 4200 2650 4200
+Text GLabel 2700 4400 2    50   Input ~ 0
+I2C2-
+Text GLabel 2700 4300 2    50   Input ~ 0
+I2C2+
+$Comp
+L MCU_ST_STM32F4:STM32F405RGTx U1
+U 1 1 5EE8F45A
+P 1900 3200
+F 0 "U1" H 1900 1311 50  0000 C CNN
+F 1 "STM32F405RGTx" H 1900 1220 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 1300 1500 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 1900 3200 50  0001 C CNN
+	1    1900 3200
+	1    0    0    -1  
+$EndComp
+Text GLabel 2800 5200 0    50   Input ~ 0
+ECHO
+Text GLabel 2800 5100 0    50   Input ~ 0
+TRIG
+Wire Wire Line
+	2800 5200 2950 5200
+Wire Wire Line
+	2800 5100 2950 5100
+Text GLabel 2700 1800 2    50   Input ~ 0
+UART2_TX
+Text GLabel 2700 1900 2    50   Input ~ 0
+UART2_RX
+Wire Wire Line
+	2600 1800 2700 1800
+Wire Wire Line
+	2700 1900 2600 1900
+Wire Wire Line
+	1200 3700 1150 3700
+Wire Wire Line
+	2650 2100 2600 2100
+Wire Wire Line
+	2650 2300 2600 2300
+Wire Wire Line
+	2650 2200 2600 2200
+$Sheet
+S 5450 950  2000 900 
+U 5F2F6324
+F0 "USB" 50
+F1 "USB.sch" 50
+$EndSheet
+$Sheet
+S 5450 2400 1750 900 
+U 5F3218EE
+F0 "IMU" 50
+F1 "IMU.sch" 50
+$EndSheet
+$Sheet
+S 3700 3950 1550 900 
+U 5F3AD1EC
+F0 "Sheet5F3AD1EB" 50
+F1 "UART_Conn.sch" 50
+$EndSheet
+$Sheet
+S 3700 2400 1500 900 
+U 5F41B667
+F0 "Power_Rail" 50
+F1 "Power_rail.sch" 50
+$EndSheet
+$Sheet
+S 3700 950  1600 1050
+U 5F4758EB
+F0 "MCU" 50
+F1 "MCU.sch" 50
+$EndSheet
+$Sheet
+S 5450 3950 1750 900 
+U 5F569749
+F0 "Power_supply" 50
+F1 "Power_supply.sch" 50
+$EndSheet
+$Sheet
+S 7550 2400 1700 900 
+U 5F275508
+F0 "EEPROM" 50
+F1 "EEPROM.sch" 50
+$EndSheet
+Text GLabel 2650 2100 2    50   Input ~ 0
+IMU_CLK
+Text GLabel 1150 3700 0    50   Input ~ 0
+IMU_CS
+Text GLabel 2650 2200 2    50   Input ~ 0
+IMU_MISO
+Text GLabel 2650 2300 2    50   Input ~ 0
+IMU_MOSI
+$Sheet
+S 7600 3950 1650 900 
+U 5F29D9C1
+F0 "Sheet5F29D9C0" 50
+F1 "SD_card.sch" 50
+$EndSheet
+Text GLabel 3050 4300 2    50   Input ~ 0
+UART3_TX
+Text GLabel 3050 4400 2    50   Input ~ 0
+UART3_RX
+Wire Wire Line
+	2600 4300 3050 4300
+Wire Wire Line
+	2600 4400 3050 4400
+Text GLabel 2750 4800 2    50   Input ~ 0
+SPI2_MOSI
+Text GLabel 2750 4700 2    50   Input ~ 0
+SPI2_MISO
+Text GLabel 3000 4600 2    50   Input ~ 0
+SPI2_SCL
+Wire Wire Line
+	3000 4600 2600 4600
+Text GLabel 3000 4500 2    50   Input ~ 0
+SPI2_NSS
+Wire Wire Line
+	3000 4500 2600 4500
+Text GLabel 2700 1600 2    50   Input ~ 0
+UART2_CTS
+Text GLabel 2700 1700 2    50   Input ~ 0
+UART2_RTS
+Wire Wire Line
+	2700 1600 2600 1600
+Wire Wire Line
+	2700 1700 2600 1700
+Text GLabel 2600 3100 2    50   Input ~ 0
+SPI3_NSS
+Wire Wire Line
+	1100 4800 1200 4800
+Wire Wire Line
+	1100 4700 1200 4700
+Wire Wire Line
+	2600 3100 3350 3100
+Wire Wire Line
+	2600 3800 3350 3800
+Text GLabel 3350 3100 2    50   Input ~ 0
+SD_CS
+Text GLabel 3350 3800 2    50   Input ~ 0
+SD_MOSI
+Wire Wire Line
+	2600 3600 3350 3600
+Text GLabel 3350 3600 2    50   Input ~ 0
+SD_CLK
+Text GLabel 3350 3700 2    50   Input ~ 0
+SD_MISO
+Wire Wire Line
+	3350 3700 2600 3700
+Wire Wire Line
+	1200 3800 1150 3800
+Text GLabel 1150 3800 0    50   Input ~ 0
+IMU1_CS
+Text GLabel 3150 2800 2    50   Input ~ 0
+USB_D-
+Text GLabel 3150 2700 2    50   Input ~ 0
+USB_D+
+Wire Wire Line
+	3150 2800 2600 2800
+Wire Wire Line
+	2600 2700 3150 2700
+Text GLabel 2850 2000 2    50   Input ~ 0
+IMU_CS2
+Wire Wire Line
+	2850 2000 2600 2000
+Text GLabel 2850 3300 2    50   Input ~ 0
+IMU_CS3
+Wire Wire Line
+	2850 3300 2600 3300
+$Sheet
+S 7500 950  1750 900 
+U 5F32DB09
+F0 "Sheet5F32DB08" 50
+F1 "nrf24_sch.sch" 50
+$EndSheet
+Wire Wire Line
+	2600 4700 2750 4700
+Wire Wire Line
+	2750 4800 2600 4800
+Text GLabel 3000 3500 2    50   Input ~ 0
+SPI2_CE
+Wire Wire Line
+	3000 3500 2600 3500
+Text GLabel 1200 3300 0    50   Input ~ 0
+Buzzer
+Text GLabel 2750 3400 2    50   Input ~ 0
+IMU_INT
+Wire Wire Line
+	2750 3400 2600 3400
+$EndSCHEMATC
