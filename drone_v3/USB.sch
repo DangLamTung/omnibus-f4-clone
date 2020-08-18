@@ -26,21 +26,10 @@ F 3 "https://www.st.com/resource/en/datasheet/usblc6-2.pdf" H 5300 4000 50  0001
 	1    5100 3650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_B_Micro J1
-U 1 1 5F38D846
-P 3350 3600
-F 0 "J1" H 3120 3497 50  0000 R CNN
-F 1 "USB_B_Micro" H 3120 3588 50  0000 R CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3500 3550 50  0001 C CNN
-F 3 "~" H 3500 3550 50  0001 C CNN
-	1    3350 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3350 4000 3350 4100
 Wire Wire Line
-	3350 4100 3000 4100
+	3350 4100 3250 4100
 Wire Wire Line
 	3000 4100 3000 3850
 $Comp
@@ -54,7 +43,6 @@ F 3 "" H 3000 3850 50  0001 C CNN
 	1    3000 3850
 	-1   0    0    1   
 $EndComp
-NoConn ~ 3250 4000
 NoConn ~ 3650 3800
 Wire Wire Line
 	3800 3700 3800 3750
@@ -101,10 +89,6 @@ F 3 "" H 5100 4200 50  0001 C CNN
 	1    5100 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 6450 3100 2    50   Input ~ 0
-USB_D+
-Text GLabel 6500 3200 2    50   Input ~ 0
-USB_D-
 Wire Wire Line
 	6500 3200 6450 3200
 Wire Wire Line
@@ -178,4 +162,24 @@ F 3 "" H 4150 3300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 3400 4150 3300
+Text GLabel 6450 3100 2    50   Input ~ 0
+USB_D-
+Text GLabel 6500 3200 2    50   Input ~ 0
+USB_D+
+$Comp
+L Connector:USB_B_Micro J1
+U 1 1 5F38D846
+P 3350 3600
+F 0 "J1" H 3120 3497 50  0000 R CNN
+F 1 "USB_B_Micro" H 3120 3588 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3500 3550 50  0001 C CNN
+F 3 "~" H 3500 3550 50  0001 C CNN
+	1    3350 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4000 3250 4100
+Connection ~ 3250 4100
+Wire Wire Line
+	3250 4100 3000 4100
 $EndSCHEMATC

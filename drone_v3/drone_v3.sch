@@ -120,7 +120,7 @@ Text GLabel 2600 3700 2    50   Input ~ 0
 SPI3_MISO
 Text GLabel 2600 3800 2    50   Input ~ 0
 SPI3_MOSI
-Text GLabel 1200 3400 0    50   Input ~ 0
+Text GLabel 1200 3500 0    50   Input ~ 0
 ADC1
 Text GLabel 900  5100 2    50   Input ~ 0
 Buzzer
@@ -305,14 +305,14 @@ Wire Wire Line
 	1200 3800 1150 3800
 Text GLabel 1150 3800 0    50   Input ~ 0
 IMU1_CS
-Text GLabel 3150 2800 2    50   Input ~ 0
-USB_D-
 Text GLabel 3150 2700 2    50   Input ~ 0
+USB_D-
+Text GLabel 3150 2800 2    50   Input ~ 0
 USB_D+
 Wire Wire Line
-	3150 2800 2600 2800
+	3150 2700 2600 2700
 Wire Wire Line
-	2600 2700 3150 2700
+	2600 2800 3150 2800
 Text GLabel 2850 2000 2    50   Input ~ 0
 IMU_CS2
 Wire Wire Line

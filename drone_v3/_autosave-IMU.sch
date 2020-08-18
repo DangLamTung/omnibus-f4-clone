@@ -755,10 +755,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf" H 1450 4950 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Pressure:BMP280 U?
+L Sensor_Pressure:BMP280 U7
 U 1 1 5F412E16
 P 8300 5650
-F 0 "U?" H 8530 5746 50  0000 L CNN
+F 0 "U7" H 8530 5746 50  0000 L CNN
 F 1 "BMP280" H 8530 5655 50  0000 L CNN
 F 2 "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" H 8300 4950 50  0001 C CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" H 8300 5650 50  0001 C CNN

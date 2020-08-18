@@ -224,57 +224,6 @@ F 3 "" H 6550 4100 50  0001 C CNN
 	1    6550 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3850 5200 3750 5200
-$Comp
-L power:GND #PWR?
-U 1 1 5F54FB15
-P 3750 5200
-AR Path="/5F54FB15" Ref="#PWR?"  Part="1" 
-AR Path="/5F41B667/5F54FB15" Ref="#PWR0137"  Part="1" 
-F 0 "#PWR0137" H 3750 4950 50  0001 C CNN
-F 1 "GND" H 3755 5027 50  0000 C CNN
-F 2 "" H 3750 5200 50  0001 C CNN
-F 3 "" H 3750 5200 50  0001 C CNN
-	1    3750 5200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3850 5100 3800 5100
-$Comp
-L power:VCC #PWR?
-U 1 1 5F54FB1C
-P 3800 5100
-AR Path="/5F54FB1C" Ref="#PWR?"  Part="1" 
-AR Path="/5F41B667/5F54FB1C" Ref="#PWR0138"  Part="1" 
-F 0 "#PWR0138" H 3800 4950 50  0001 C CNN
-F 1 "VCC" H 3815 5273 50  0000 C CNN
-F 2 "" H 3800 5100 50  0001 C CNN
-F 3 "" H 3800 5100 50  0001 C CNN
-	1    3800 5100
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3700 5000 3850 5000
-Wire Wire Line
-	3700 4900 3850 4900
-Text GLabel 3700 5000 0    50   Input ~ 0
-TRIG
-Text GLabel 3700 4900 0    50   Input ~ 0
-ECHO
-$Comp
-L Connector:Conn_01x04_Male J?
-U 1 1 5F54FB26
-P 4050 5100
-AR Path="/5F54FB26" Ref="J?"  Part="1" 
-AR Path="/5F41B667/5F54FB26" Ref="J11"  Part="1" 
-F 0 "J11" H 4022 4982 50  0000 R CNN
-F 1 "Conn_01x04_Male" H 4022 5073 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4050 5100 50  0001 C CNN
-F 3 "~" H 4050 5100 50  0001 C CNN
-	1    4050 5100
-	-1   0    0    1   
-$EndComp
 Text GLabel 7950 3900 0    50   Input ~ 0
 Buzzer
 $Comp

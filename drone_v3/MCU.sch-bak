@@ -421,7 +421,7 @@ AR Path="/5F4B573F" Ref="C?"  Part="1"
 AR Path="/5F4758EB/5F4B573F" Ref="C5"  Part="1" 
 F 0 "C5" V 5055 5500 50  0000 C CNN
 F 1 "CP" V 4964 5500 50  0000 C CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P_Pad1.30x1.05mm_HandSolder" H 4838 5350 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4838 5350 50  0001 C CNN
 F 3 "~" H 4800 5500 50  0001 C CNN
 	1    4800 5500
 	0    -1   -1   0   
@@ -434,7 +434,7 @@ AR Path="/5F4B5745" Ref="C?"  Part="1"
 AR Path="/5F4758EB/5F4B5745" Ref="C6"  Part="1" 
 F 0 "C6" H 4918 5846 50  0000 L CNN
 F 1 "CP" H 4918 5755 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-15_AVX-P_Pad1.30x1.05mm_HandSolder" H 4838 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4838 5650 50  0001 C CNN
 F 3 "~" H 4800 5800 50  0001 C CNN
 	1    4800 5800
 	0    -1   -1   0   

@@ -166,9 +166,9 @@ F 3 "" H 7850 2950 50  0001 C CNN
 	1    7850 2950
 	0    1    1    0   
 $EndComp
-Text GLabel 7950 3350 0    50   Input ~ 0
-UART2_TX
 Text GLabel 7950 3250 0    50   Input ~ 0
+UART2_TX
+Text GLabel 7950 3350 0    50   Input ~ 0
 UART2_RX
 $Comp
 L power:VCC #PWR?
@@ -436,9 +436,9 @@ $EndComp
 Wire Wire Line
 	7850 2950 8050 2950
 Wire Wire Line
-	7950 3050 8050 3050
-Wire Wire Line
 	7950 3150 8050 3150
+Wire Wire Line
+	7950 3050 8050 3050
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 5F3FF100
@@ -493,14 +493,14 @@ F 3 "~" H 5900 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8050 3450 7950 3450
-Text GLabel 7950 3150 0    50   Input ~ 0
-UART2_CTS
 Text GLabel 7950 3050 0    50   Input ~ 0
+UART2_CTS
+Text GLabel 7950 3150 0    50   Input ~ 0
 UART2_RTS
 Wire Wire Line
-	7950 3350 8050 3350
-Wire Wire Line
 	7950 3250 8050 3250
+Wire Wire Line
+	7950 3350 8050 3350
 $Comp
 L Connector:Conn_01x04_Male J?
 U 1 1 5F2EDCE6
