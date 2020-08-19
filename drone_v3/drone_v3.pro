@@ -1,4 +1,4 @@
-update=16/8/2020 3:23:16 PM
+update=8/19/2020 3:17:58 PM
 version=1
 last_client=kicad
 [general]
@@ -25,9 +25,9 @@ ProhibitOverlappingCourtyards=1
 MinTrackWidth=0.15
 MinViaDiameter=0.4
 MinViaDrill=0.3
-MinMicroViaDiameter=0.2
+MinMicroViaDiameter=0.15
 MinMicroViaDrill=0.09999999999999999
-MinHoleToHole=0.25
+MinHoleToHole=0.15
 TrackWidth1=0.15
 TrackWidth2=0.1524
 TrackWidth3=0.2
