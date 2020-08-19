@@ -139,19 +139,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 3300 5850 3300
 Wire Wire Line
-	5850 3300 5850 3200
-Wire Wire Line
 	4750 3100 4750 3500
-Wire Wire Line
-	5000 3350 5800 3350
-Wire Wire Line
-	5800 3350 5800 3200
-Wire Wire Line
-	5800 3200 5850 3200
-Connection ~ 5800 3350
-Connection ~ 5850 3200
-Wire Wire Line
-	5850 3200 5850 3100
 Wire Wire Line
 	6950 4950 6950 4850
 $Comp
@@ -295,15 +283,13 @@ Wire Wire Line
 Wire Wire Line
 	2050 1250 2050 1650
 Connection ~ 2050 1250
-Wire Wire Line
-	2050 1250 2250 1250
 $Comp
 L Device:C C23
 U 1 1 5F316297
 P 2250 1400
 F 0 "C23" H 2365 1446 50  0000 L CNN
 F 1 "C" H 2365 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2288 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2288 1250 50  0001 C CNN
 F 3 "~" H 2250 1400 50  0001 C CNN
 	1    2250 1400
 	1    0    0    -1  
@@ -317,7 +303,7 @@ U 1 1 5F316B53
 P 2500 1400
 F 0 "C24" H 2615 1446 50  0000 L CNN
 F 1 "C" H 2615 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2538 1250 50  0001 C CNN
 F 3 "~" H 2500 1400 50  0001 C CNN
 	1    2500 1400
 	1    0    0    -1  
@@ -356,7 +342,7 @@ U 1 1 5F3293FF
 P 2800 1400
 F 0 "C26" H 2915 1446 50  0000 L CNN
 F 1 "C" H 2915 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2838 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2838 1250 50  0001 C CNN
 F 3 "~" H 2800 1400 50  0001 C CNN
 	1    2800 1400
 	1    0    0    -1  
@@ -369,8 +355,6 @@ Wire Wire Line
 Connection ~ 2500 1550
 Text GLabel 1200 2350 0    50   Input ~ 0
 IMU_CS2
-Wire Wire Line
-	1200 2350 1450 2350
 Text GLabel 7650 5750 0    50   Input ~ 0
 IMU_CS3
 Wire Wire Line
@@ -639,7 +623,7 @@ U 1 1 5F3194C6
 P 2550 2850
 F 0 "C25" H 2665 2896 50  0000 L CNN
 F 1 "C" H 2665 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 2700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2588 2700 50  0001 C CNN
 F 3 "~" H 2550 2850 50  0001 C CNN
 	1    2550 2850
 	1    0    0    -1  
@@ -755,10 +739,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20002200D.pdf" H 1450 4950 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Sensor_Pressure:BMP280 U?
+L Sensor_Pressure:BMP280 U7
 U 1 1 5F412E16
 P 8300 5650
-F 0 "U?" H 8530 5746 50  0000 L CNN
+F 0 "U7" H 8530 5746 50  0000 L CNN
 F 1 "BMP280" H 8530 5655 50  0000 L CNN
 F 2 "Package_LGA:Bosch_LGA-8_2x2.5mm_P0.65mm_ClockwisePinNumbering" H 8300 4950 50  0001 C CNN
 F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP280-DS001.pdf" H 8300 5650 50  0001 C CNN
@@ -774,4 +758,69 @@ Wire Wire Line
 	8400 6000 8300 6000
 Wire Wire Line
 	8300 6000 8300 5950
+$Comp
+L Device:R R16
+U 1 1 5F3D2E40
+P 1300 1600
+F 0 "R16" H 1370 1646 50  0000 L CNN
+F 1 "R" H 1370 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1230 1600 50  0001 C CNN
+F 3 "~" H 1300 1600 50  0001 C CNN
+	1    1300 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1250 2250 1250
+Wire Wire Line
+	1200 2350 1300 2350
+Wire Wire Line
+	1300 1250 1300 1450
+Wire Wire Line
+	1300 1250 2050 1250
+Wire Wire Line
+	1300 1750 1300 2350
+Connection ~ 1300 2350
+Wire Wire Line
+	1300 2350 1450 2350
+$Comp
+L Device:CP C34
+U 1 1 5F423DE4
+P 3250 1400
+F 0 "C34" H 3368 1446 50  0000 L CNN
+F 1 "CP" H 3368 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 3288 1250 50  0001 C CNN
+F 3 "~" H 3250 1400 50  0001 C CNN
+	1    3250 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 1550 3250 1650
+Wire Wire Line
+	3250 1250 2800 1250
+Connection ~ 2800 1250
+$Comp
+L power:GND #PWR0164
+U 1 1 5F42C68A
+P 3250 1650
+F 0 "#PWR0164" H 3250 1400 50  0001 C CNN
+F 1 "GND" H 3255 1477 50  0000 C CNN
+F 2 "" H 3250 1650 50  0001 C CNN
+F 3 "" H 3250 1650 50  0001 C CNN
+	1    3250 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3100 5850 3250
+Wire Wire Line
+	5650 3350 5650 3250
+Wire Wire Line
+	5650 3250 5850 3250
+Wire Wire Line
+	5000 3350 5650 3350
+Connection ~ 5650 3350
+Wire Wire Line
+	5650 3350 5800 3350
+Connection ~ 5850 3250
+Wire Wire Line
+	5850 3250 5850 3300
 $EndSCHEMATC
