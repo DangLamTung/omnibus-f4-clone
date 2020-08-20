@@ -106,9 +106,6 @@ F 3 "~" H 4500 3100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4500 2950 5100 2950
-Connection ~ 5100 2950
-Wire Wire Line
-	5100 2950 5100 2850
 Wire Wire Line
 	4500 3250 4500 3400
 $Comp
@@ -120,17 +117,6 @@ F 1 "GND" H 4505 3227 50  0000 C CNN
 F 2 "" H 4500 3400 50  0001 C CNN
 F 3 "" H 4500 3400 50  0001 C CNN
 	1    4500 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0106
-U 1 1 5F3E2968
-P 5100 2850
-F 0 "#PWR0106" H 5100 2700 50  0001 C CNN
-F 1 "+5V" H 5115 3023 50  0000 C CNN
-F 2 "" H 5100 2850 50  0001 C CNN
-F 3 "" H 5100 2850 50  0001 C CNN
-	1    5100 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -173,4 +159,12 @@ Text GLabel 4150 3000 1    50   Input ~ 0
 PWR_IN
 Wire Wire Line
 	4150 3000 4150 3400
+Wire Wire Line
+	3750 2900 3750 3400
+Text GLabel 3750 2900 1    50   Input ~ 0
+VBUS
+Wire Wire Line
+	5100 2450 5100 2950
+Text GLabel 5100 2450 1    50   Input ~ 0
+VBUS
 $EndSCHEMATC

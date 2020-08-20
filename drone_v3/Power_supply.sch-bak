@@ -309,7 +309,7 @@ AR Path="/5F584F9D" Ref="D?"  Part="1"
 AR Path="/5F569749/5F584F9D" Ref="D1"  Part="1" 
 F 0 "D1" V 3554 4228 50  0000 L CNN
 F 1 "DIODE" V 3645 4228 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 4100 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" H 3600 4100 50  0001 C CNN
 F 3 "~" H 3600 4100 50  0001 C CNN
 	1    3600 4100
 	0    1    1    0   
@@ -392,4 +392,8 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf" H 4900 4300 
 	1    4900 4300
 	1    0    0    -1  
 $EndComp
+Text GLabel 3300 4300 0    50   Input ~ 0
+PWR_IN
+Wire Wire Line
+	3300 4300 3600 4300
 $EndSCHEMATC
