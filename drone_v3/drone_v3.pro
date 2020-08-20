@@ -1,4 +1,4 @@
-update=19/8/2020 7:59:13 PM
+update=8/20/2020 11:39:32 AM
 version=1
 last_client=kicad
 [general]
@@ -21,9 +21,9 @@ BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
-ProhibitOverlappingCourtyards=1
+ProhibitOverlappingCourtyards=0
 MinTrackWidth=0.15
-MinViaDiameter=0.5
+MinViaDiameter=0.6
 MinViaDrill=0.3
 MinMicroViaDiameter=0.15
 MinMicroViaDrill=0.09999999999999999
@@ -246,7 +246,7 @@ dPairViaGap=0.25
 Name=USB
 Clearance=0.15
 TrackWidth=0.35
-ViaDiameter=0.5
+ViaDiameter=0.6
 ViaDrill=0.3
 uViaDiameter=0.3
 uViaDrill=0.1
