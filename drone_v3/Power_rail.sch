@@ -291,8 +291,6 @@ Wire Wire Line
 	8650 3600 8650 3700
 Wire Wire Line
 	8650 3250 8650 3500
-Text GLabel 3800 3500 0    50   Input ~ 0
-USB_D+
 Connection ~ 4500 3500
 $Comp
 L power:+5V #PWR?
@@ -307,4 +305,5 @@ F 3 "" H 4500 3350 50  0001 C CNN
 	1    4500 3350
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3800 3500
 $EndSCHEMATC

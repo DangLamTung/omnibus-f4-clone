@@ -263,19 +263,6 @@ F 3 "~" H 6300 5550 50  0001 C CNN
 $EndComp
 $Comp
 L Device:C C?
-U 1 1 5F49F4B2
-P 6750 5550
-AR Path="/5F49F4B2" Ref="C?"  Part="1" 
-AR Path="/5F4758EB/5F49F4B2" Ref="C12"  Part="1" 
-F 0 "C12" H 6865 5596 50  0000 L CNN
-F 1 "100n" H 6865 5505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6788 5400 50  0001 C CNN
-F 3 "~" H 6750 5550 50  0001 C CNN
-	1    6750 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
 U 1 1 5F49F4B8
 P 7150 5550
 AR Path="/5F49F4B8" Ref="C?"  Part="1" 
@@ -306,11 +293,6 @@ Wire Wire Line
 	7650 5400 7650 5250
 Connection ~ 7650 5400
 Connection ~ 6300 5400
-Wire Wire Line
-	6300 5400 6750 5400
-Connection ~ 6750 5400
-Wire Wire Line
-	6750 5400 7150 5400
 Connection ~ 7150 5400
 Wire Wire Line
 	7150 5400 7650 5400
@@ -452,4 +434,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 5700 7650 5700
 Connection ~ 7650 5700
+Wire Wire Line
+	6300 5400 7150 5400
 $EndSCHEMATC
